@@ -13,9 +13,6 @@ import java.util.Map;
 // import java.util.Scanner;
 // import java.util.Set;
 import java.util.Scanner;
-
-
-
 public class ejercicio6 {    
         public static void main (String[] args){
             /*
@@ -35,7 +32,6 @@ public class ejercicio6 {
             map.put(Trabajador1.dni, ((Trabajador1.horasTrabajadas*Trabajador1.valorPorHora)*30));
             map.put(Trabajador2.dni, ((Trabajador2.horasTrabajadas*Trabajador2.valorPorHora)*30));
             */
-            
 
             // agregar empleado por medio de terminal (scanner(System.in))
 

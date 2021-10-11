@@ -7,39 +7,25 @@ package EjerciciosComplementariosLevel1;
 import java.util.Scanner;
 public class ejercicio7 {    
     public static void main(String[] args) {
-
-        // List<String> letrasMayusculas = new ArrayList<String>(Arrays.asList("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "Ñ", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"));                
-        
+              
         Scanner input = new Scanner(System.in);
-        
+       
         System.out.println("Ingresa un string en minusculas para convertirlo por completa en mayusculas");
-        String stringMinusculas = input.nextLine();
+        String textoEnMinusculas = input.nextLine();
         
-        // String textoEnMayusculas = "";
-        String textoEnMayusculas1 = "";
+        String textoEnMayusculas = "";
         
-        for(int i =0 ; i < stringMinusculas.length() ; i++){
-            if(String.valueOf((stringMinusculas.charAt(i))).equals(" ")){
-                // textoEnMayusculas+= " ";                
-                textoEnMayusculas1+= " ";
+        for(int i =0 ; i < textoEnMinusculas.length() ; i++){
+            if(String.valueOf((textoEnMinusculas.charAt(i))).equals(" ")){        
+                textoEnMayusculas+= " ";
             }
-            // Tambien funciona creando nuestra propia lista con el abecedario en mayusculas (A-Z)
-            // for(int l = 0; l < letrasMayusculas.size(); l++){                
-            //     if(String.valueOf((stringMinusculas.charAt(i))).equalsIgnoreCase(String.valueOf(letrasMayusculas.get(l)))){
-            //         textoEnMayusculas+=letrasMayusculas.get(l);
-            //     }                
-            // }
             for(int c = 65; c <= 90; c++){
-                String caracterConvertido = Character.toString(c);{}
-                if(String.valueOf((stringMinusculas.charAt(i))).equalsIgnoreCase(caracterConvertido) || String.valueOf((stringMinusculas.charAt(i))).equalsIgnoreCase("Ñ")){
-                    textoEnMayusculas1+=caracterConvertido;
-
+                String letraMayuscula = Character.toString(c);{}
+                if(String.valueOf((textoEnMinusculas.charAt(i))).equalsIgnoreCase(letraMayuscula)){
+                    textoEnMayusculas += letraMayuscula;
                 }
             }    
         }
-        // System.out.println(textoEnMayusculas);
-        System.out.println(textoEnMayusculas1);        
+        System.out.println(textoEnMayusculas);        
     }    
 }
-// import java.lang.reflect.Array;
-// String [] arrayStrinMayuscula = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};

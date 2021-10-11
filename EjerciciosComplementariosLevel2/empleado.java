@@ -1,10 +1,6 @@
+// Esta clase fue creada para que sea heredada en el ejercicio6.java
 package EjerciciosComplementariosLevel2;
-
-// import java.util.HashSet;
-
 public class empleado {
-
-
     String NombreApellido;
     String dni;
     int horasTrabajadas;
@@ -16,9 +12,6 @@ public class empleado {
         this.horasTrabajadas = horasTrabajadas;
         this.valorPorHora = valorPorHora;
     }    
-
-    // HashSet<empleado> trabajadorHashSet = new HashSet<>();
-
     
 }
         

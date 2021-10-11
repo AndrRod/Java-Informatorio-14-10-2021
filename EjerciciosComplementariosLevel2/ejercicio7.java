@@ -22,8 +22,7 @@ public class ejercicio7{
                 resultado.add("FizzBuzz");   
             }
             else if(i%2 == 0){
-                resultado.add("Fizz");
-                
+                resultado.add("Fizz");                
             }
             else if(i%3 == 0){
                 resultado.add("Buzz");   

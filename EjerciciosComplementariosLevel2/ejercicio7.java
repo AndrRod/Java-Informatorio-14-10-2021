@@ -40,7 +40,6 @@ public class ejercicio7{
                 }
                 else{
                     resultado[contador] = (String.valueOf(i));
-
                 }
                 contador++;                
         }                

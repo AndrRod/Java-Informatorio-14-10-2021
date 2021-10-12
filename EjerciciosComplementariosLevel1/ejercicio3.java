@@ -1,6 +1,5 @@
 // 3. Confeccionar un programa que dado un número entero como dato de entrada imprima la secuencia de números (incrementos de 1) de la siguiente forma:
 package EjerciciosComplementariosLevel1;
-
 import java.util.Scanner;
 
 public class ejercicio3 {
@@ -21,7 +20,5 @@ public class ejercicio3 {
             System.out.println();
             contador++;
         }
-        
-
     }
 }

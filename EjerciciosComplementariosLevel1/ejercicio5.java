@@ -1,10 +1,8 @@
 //5.  Se desea una aplicación que solicite 2 números enteros y realice la operación de multiplicación por sumas sucesivas (sin uso de librerías).
 package EjerciciosComplementariosLevel1;
-
 import java.util.Scanner;
 
-public class ejercicio5 {
-    
+public class ejercicio5 {    
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);

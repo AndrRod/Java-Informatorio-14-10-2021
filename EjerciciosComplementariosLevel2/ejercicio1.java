@@ -9,13 +9,14 @@ public class ejercicio1 {
         Scanner input = new Scanner(System.in);             
         
         System.out.print("Ingrese la cantidad de ciudades a ingresar: ");
-        int cantidad = input.nextInt();
+        String cantidad = input.nextLine();
         ArrayList<String> ciudadesFavoritas = new ArrayList<String>();
         
-        // si no se incorpora nexLine() hace un salteo que todavía no logro comprender porque
-        input.nextLine();
+        // si no se incorpora nexLine() cuando hago uso de nexInt hace un salto de linea que todavía no logro comprender porque lo hace
+        // no usar nexline y nexint en el mismo procedimiento
+        // input.nextLine();
         
-        for(int i = 1; i<= cantidad; i++){
+        for(int i = 1; i<= Integer.parseInt(cantidad); i++){
             System.out.print("Ingrese " + i + "° " + "ciudad favorita: ");
             ciudadesFavoritas.add("#" + i + " - " + input.nextLine());
         }

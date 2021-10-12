@@ -9,8 +9,9 @@ public class ejercicio5 {
         
         Scanner input = new Scanner(System.in);
         
-        System.out.println("ingrese dos numero enteros para hacer una multiplicacion: ");
+        System.out.print("ingrese dos numero enteros para hacer una multiplicacion: \nIngrese el 1° número: ");
         int num1 = input.nextInt();
+        System.out.print("Ingrese el 2° número: ");
         int num2 = input.nextInt();
 
         int resultado = 0;
@@ -19,7 +20,4 @@ public class ejercicio5 {
         }
         System.out.println(num1 + " x " + num2 + " = " + resultado);
     }
-
-    
-
 }

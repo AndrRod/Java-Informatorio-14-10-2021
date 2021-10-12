@@ -10,7 +10,7 @@ public class ejercicio7 {
               
         Scanner input = new Scanner(System.in);
        
-        System.out.println("Ingresa un string en minusculas para convertirlo por completa en mayusculas");
+        System.out.println("Ingresa un string en minusculas para convertirlo por completa en mayusculas :");
         String textoEnMinusculas = input.nextLine();
         
         String textoEnMayusculas = "";

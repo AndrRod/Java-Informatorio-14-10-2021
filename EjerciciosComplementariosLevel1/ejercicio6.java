@@ -8,17 +8,15 @@ public class ejercicio6 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Ingrese dos numeros enteros para calcular la potencia: ");
-        
+        System.out.print("Ingrese dos numeros enteros para calcular la potencia: \nIngrese 1° número: ");
         int num1 = input.nextInt();
+        System.out.print("Ingrese 2° número: ");
         int num2 = input.nextInt();
 
         int potencia = num1;
         for(int i = num2; i>1; i--){
-            potencia *= num1;
-            
+            potencia *= num1;            
         }
         System.out.println(num1 + " elevado a " + num2 + " = " + potencia);
-
     }
 }

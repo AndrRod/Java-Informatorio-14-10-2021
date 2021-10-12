@@ -1,7 +1,5 @@
 // 8. Crear una aplicación que solicite de entrada los datos de una persona en este orden: Nombre y Apellido, Edad, Dirección, Ciudad
 // Luego imprimirá el siguiente mensaje: {Ciudad} - {Dirección} - {Edad} - {Nombre y Apellido}
-
-
 package EjerciciosComplementariosLevel1;
 
 import java.util.Scanner;
@@ -20,8 +18,6 @@ public class ejercicio8 {
         String ciudad = input.nextLine();
 
         System.out.println();
-        System.out.println(ciudad + " - " + direccion + " - " + edad + " - " + nombre_apellido);
-        
-        
+        System.out.println("Ciudad: "+ ciudad + " - " + "Dirección: " + direccion + " - " + "Edad: "+ edad + " - " + "Nombre y Apellido: " + nombre_apellido);
     }
 }

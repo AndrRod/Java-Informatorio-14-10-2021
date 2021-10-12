@@ -18,7 +18,6 @@ public class ejercicio9 {
             contador++;
         }                 
     }
-    System.out.println(contador);        
+    System.out.println(String.format("la letra '%s' se repite %s veces", letra_repetida, contador));        
     }
-
 }

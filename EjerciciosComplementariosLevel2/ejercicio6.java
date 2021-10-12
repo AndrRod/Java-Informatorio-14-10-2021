@@ -12,11 +12,11 @@ import java.util.Map;
 
 public class ejercicio6 {    
         public static void main (String[] args){
-          
+            
             empleado Trabajador1 = new empleado("Andres Rodriguez", "3304279", 8, 200);
             empleado Trabajador2 = new empleado("Cristian Romero", "3204209", 8, 300);                        
             empleado Trabajador3 = new empleado("Robertito Ortigoza", "3104229", 9, 300);    
-
+            
             HashSet<empleado> trabajadorHashSet = new HashSet<>();
             
             trabajadorHashSet.add(Trabajador1);
@@ -34,10 +34,8 @@ public class ejercicio6 {
             while(it.hasNext()){
                 String key = it.next();
                 System.out.println("Clave dni: " + key + " -> Valor sueldo mes: " + map.get(key));
-              }
-            
+              }            
     }
-
 }
         
 

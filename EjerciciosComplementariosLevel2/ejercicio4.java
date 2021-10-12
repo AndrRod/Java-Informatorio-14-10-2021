@@ -10,11 +10,8 @@ import java.util.List;
 
 public class ejercicio4 {
     public static void main(String[] args) {
-        
-        
         List<String> Alumnos = new ArrayList<String>(Arrays.asList("andres", "roberto", "carlos", "johana", "simon", "juana", "maria", "pedro", "rogelio", "mirtha", "david", "sebastian"));
         
-
         List<String> curso1 = Alumnos.subList(0, 4);
         List<String> curso2 = Alumnos.subList(4, 8);
         List<String> curso3 = Alumnos.subList(8, 12);

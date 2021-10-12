@@ -28,13 +28,7 @@ public class ejercicio6 {
             map.put(Trabajador1.dni, ((Trabajador1.horasTrabajadas*Trabajador1.valorPorHora)*30));
             map.put(Trabajador2.dni, ((Trabajador2.horasTrabajadas*Trabajador2.valorPorHora)*30));
             map.put(Trabajador3.dni, ((Trabajador2.horasTrabajadas*Trabajador2.valorPorHora)*30));
-            
-            // la iteracion del map funciona tambien de la siguiente manera:
-            // for(int i = 0; i< map.keySet().size() ; i++){
-            //     System.out.print((map.keySet().iterator()).next() + " ");
-            //     System.out.println(map.get((map.keySet().iterator()).next()));
-            // }
-            
+                      
             System.out.println("\nLa lista de trabajadores fueron guardados en el siguiente map: ");
             Iterator<String> it = map.keySet().iterator();
             while(it.hasNext()){

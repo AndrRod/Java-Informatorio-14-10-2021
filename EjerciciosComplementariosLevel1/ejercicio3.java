@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ejercicio3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.print("Ingrese un número entero, para imprimir la secuencia de numeros incrementados de a 1: ");
         int numero = input.nextInt();         
                
         input.close();

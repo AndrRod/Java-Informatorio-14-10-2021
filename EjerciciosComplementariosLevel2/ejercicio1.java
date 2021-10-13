@@ -8,7 +8,7 @@ public class ejercicio1 {
          
         Scanner input = new Scanner(System.in);             
         
-        System.out.print("Ingrese la cantidad de ciudades a ingresar: ");
+        System.out.print("Ingrese el numero de ciudades a ingresar: ");
         String cantidad = input.nextLine();
         ArrayList<String> ciudadesFavoritas = new ArrayList<String>();
         

@@ -26,12 +26,8 @@ public class ejercicio7{
         String [] resultado = new String[(num2-num1)];
         
         int contador = 0;
-        for(int i = num1; i< num2; i ++){
-                        
-                if(i == num1 || i == (num2-1)){
-                    resultado[contador] = (String.valueOf(i));                    
-                }
-                else if(i%3 == 0 && i%2==0){
+        for(int i = num1; i< num2; i ++){                        
+                if(i%3 == 0 && i%2==0){
                     resultado[contador] = "FizzBuzz";   
                 }
                 else if(i%2 == 0){

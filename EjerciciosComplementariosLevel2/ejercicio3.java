@@ -15,15 +15,15 @@ public class ejercicio3 {
         List<String> listaCartasDesordenadas = new ArrayList<>(listaCartas);
         Collections.shuffle(listaCartasDesordenadas);
 
-        System.out.print("\nCartas en orden comun: \t\t");
+        System.out.print("\nCartas en orden: \t\t");
         for(int i=0; i< listaCartas.size(); i++){
            System.out.print(listaCartas.get(i) + " ");
         }
-        System.out.print("\nCartas en orden invertida: \t");
+        System.out.print("\nCartas en orden inverso: \t");
         for(int i=0; i< listaCartas.size(); i++){
             System.out.print(listaCartasInvertidas.get(i) + " ");
         }
-        System.out.print("\ncartas mezcladas: \t\t");
+        System.out.print("\ncartas desordenadas: \t\t");
         for(int i=0; i< listaCartas.size(); i++){
             System.out.print(listaCartasDesordenadas.get(i) + " ");
         }

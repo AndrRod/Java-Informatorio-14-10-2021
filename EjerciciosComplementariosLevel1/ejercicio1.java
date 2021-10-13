@@ -7,6 +7,6 @@ public class ejercicio1{
         Scanner input = new Scanner(System.in);
         System.out.println("Ingrese su nombre para imprimir en consola un saludo con su nombre!!!");
         String nombre = input.nextLine();
-        System.out.println("HOLA " + nombre);
+        System.out.println("HOLA " + nombre.toUpperCase());
     }
 }

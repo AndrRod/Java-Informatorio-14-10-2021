@@ -13,27 +13,31 @@ import java.util.Map;
 public class ejercicio6 {    
         public static void main (String[] args){
             
-            empleado Trabajador1 = new empleado("Andres Rodriguez", "3304279", 8, 200);
-            empleado Trabajador2 = new empleado("Cristian Romero", "3204209", 8, 300);                        
-            empleado Trabajador3 = new empleado("Robertito Ortigoza", "3104229", 9, 300);    
+            empleado Trabajador1 = new empleado("Andres Rodriguez", "33042179", 8, 200);
+            empleado Trabajador2 = new empleado("Cristian Romero", "32040091", 8, 300);                        
+            empleado Trabajador3 = new empleado("Robertito Ortigoza", "31568976", 9, 300);    
+            empleado Trabajador4 = new empleado("Noelia Espinosa", "30930290    ", 9, 500);    
             
             HashSet<empleado> trabajadorHashSet = new HashSet<>();
             
             trabajadorHashSet.add(Trabajador1);
             trabajadorHashSet.add(Trabajador2);
             trabajadorHashSet.add(Trabajador3);            
+            trabajadorHashSet.add(Trabajador4);            
             
             Map<String, Integer> map = new HashMap<String, Integer>();  
             
             map.put(Trabajador1.dni, ((Trabajador1.horasTrabajadas*Trabajador1.valorPorHora)*30));
             map.put(Trabajador2.dni, ((Trabajador2.horasTrabajadas*Trabajador2.valorPorHora)*30));
             map.put(Trabajador3.dni, ((Trabajador2.horasTrabajadas*Trabajador2.valorPorHora)*30));
+            map.put(Trabajador4.dni, ((Trabajador2.horasTrabajadas*Trabajador2.valorPorHora)*30));
                       
-            System.out.println("\nLa lista de trabajadores fueron guardados en el siguiente map: ");
+            System.out.println("\nLa lista de empleados fueron guardados en el siguiente map: ");
+
             Iterator<String> it = map.keySet().iterator();
             while(it.hasNext()){
                 String key = it.next();
-                System.out.println("Clave dni: " + key + " -> Valor sueldo mes: " + map.get(key));
+                System.out.println(String.format("Clave dni: %s -> Valor sueldo mes: %d", key, map.get(key)));
               }            
     }
 }

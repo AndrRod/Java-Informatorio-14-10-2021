@@ -11,7 +11,7 @@ public class ejercicio5 {
         int num1 = input.nextInt();
         System.out.print("Ingrese el 2° número: ");
         int num2 = input.nextInt();
-
+        input.close();
         int resultado = 0;
         for(int i = num1; i>0; i--){
             resultado += num2;

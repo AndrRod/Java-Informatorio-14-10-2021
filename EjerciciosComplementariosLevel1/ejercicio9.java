@@ -10,6 +10,7 @@ public class ejercicio9 {
 
     System.out.print("Igresa la letra que quieras, para saber cuantas veces se repite en el texto: ");
     String letra_repetida = input.nextLine();
+    input.close();
     
     int contador = 0;
 

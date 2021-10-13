@@ -9,6 +9,7 @@ public class ejercicio4 {
         System.out.print("ingrese un numero para calcular su factorial: ");
 
         int numero = entrada.nextInt();
+        entrada.close();
         
         int resultado = 1;
                 

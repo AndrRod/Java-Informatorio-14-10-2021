@@ -20,15 +20,15 @@ public class ejercicio1 {
             System.out.print("Ingrese " + i + "° " + "ciudad favorita: ");
             ciudadesFavoritas.add("#" + i + " - " + input.nextLine());
         }
-
+        input.close();
         System.out.println();
         System.out.println("Ciudades favoritas: ");
-
+        
         Iterator<String> iterarCiudadesFavoritas = ciudadesFavoritas.iterator();
-            while(iterarCiudadesFavoritas.hasNext()){
-                String ciudad = iterarCiudadesFavoritas.next();
-                System.out.println(ciudad);
-            }
+        while(iterarCiudadesFavoritas.hasNext()){
+            String ciudad = iterarCiudadesFavoritas.next();
+            System.out.println(ciudad);
+        }
         // o tambien
         // for(int i= 0; i< cantidad; i++){
         //     System.out.println(ciudadesFavoritas.get(i));

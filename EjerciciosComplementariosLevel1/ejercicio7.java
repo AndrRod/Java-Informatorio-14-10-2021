@@ -12,7 +12,7 @@ public class ejercicio7 {
        
         System.out.println("Ingresa un string en minusculas para convertirlo por completa en mayusculas :");
         String textoEnMinusculas = input.nextLine();
-        
+        input.close();
         String textoEnMayusculas = "";
         
         for(int i =0 ; i < textoEnMinusculas.length() ; i++){

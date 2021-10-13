@@ -16,6 +16,7 @@ public class ejercicio8 {
         String direccion = input.nextLine();
         System.out.print("ingrese su ciudad: ");
         String ciudad = input.nextLine();
+        input.close();
         System.out.println(String.format("\n%s - %s - %s - %s", ciudad, direccion, edad, nombre_apellido));
     }
 }

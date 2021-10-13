@@ -10,7 +10,7 @@ public class ejercicio6 {
         int num1 = input.nextInt();
         System.out.print("Ingrese 2° número: ");
         int num2 = input.nextInt();
-
+        input.close();
         int potencia = num1;
         for(int i = num2; i>1; i--){
             potencia *= num1;            

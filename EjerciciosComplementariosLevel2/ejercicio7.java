@@ -14,8 +14,10 @@ public class ejercicio7{
         int num1 = input.nextInt();
         System.out.print("2° numero: ");
         int num2 = input.nextInt();
+        input.close();
         System.out.println();
         System.out.println("Resultado: ");
+
 
         ArrayString2argumentos(num1, num2);
     }

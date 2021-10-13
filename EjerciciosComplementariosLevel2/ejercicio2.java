@@ -22,6 +22,8 @@ public class ejercicio2 {
         System.out.println("Ingresa 1 numero al final de la lista: ");
         arrayListNumEnteros.add(6, input.nextInt());       
         
+        input.close();
+        
         System.out.println("\nA continuacion se muestran los elementos de la lista originaria: ");
 
         for(int i = 0; i<5; i++){

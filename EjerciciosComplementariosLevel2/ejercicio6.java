@@ -16,7 +16,7 @@ public class ejercicio6 {
             empleado Trabajador1 = new empleado("Andres Rodriguez", "33042179", 8, 200);
             empleado Trabajador2 = new empleado("Cristian Romero", "32040091", 8, 300);                        
             empleado Trabajador3 = new empleado("Robertito Ortigoza", "31568976", 9, 300);    
-            empleado Trabajador4 = new empleado("Noelia Espinosa", "30930290    ", 9, 500);    
+            empleado Trabajador4 = new empleado("Noelia Espinosa", "30930290", 9, 500);    
             
             HashSet<empleado> trabajadorHashSet = new HashSet<>();
             
@@ -41,5 +41,17 @@ public class ejercicio6 {
               }            
     }
 }
-        
+class empleado {
+    String NombreApellido;
+    String dni;
+    int horasTrabajadas;
+    int valorPorHora;
+    
+    public empleado(String NombreApellido, String dni, int horasTrabajadas, int valorPorHora){
+        this.NombreApellido = NombreApellido;
+        this.dni = dni;   
+        this.horasTrabajadas = horasTrabajadas;
+        this.valorPorHora = valorPorHora;
+    }
+}
 

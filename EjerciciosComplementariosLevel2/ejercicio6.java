@@ -7,16 +7,16 @@
 package EjerciciosComplementariosLevel2;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
+// import java.util.Iterator;
 import java.util.Map;
 
 public class ejercicio6 {    
-        public static void main (String[] args){
-            
+        public static void main (String[] args){            
             empleado Trabajador1 = new empleado("Andres Rodriguez", "33042179", 8, 200);
             empleado Trabajador2 = new empleado("Cristian Romero", "32040091", 8, 300);                        
             empleado Trabajador3 = new empleado("Robertito Ortigoza", "31568976", 9, 300);    
             empleado Trabajador4 = new empleado("Noelia Espinosa", "30930290", 9, 500);    
+            empleado Trabajador5 = new empleado("Rogelio Gomez", "10930290", 9, 500);    
             
             HashSet<empleado> trabajadorHashSet = new HashSet<>();
             
@@ -24,34 +24,47 @@ public class ejercicio6 {
             trabajadorHashSet.add(Trabajador2);
             trabajadorHashSet.add(Trabajador3);            
             trabajadorHashSet.add(Trabajador4);            
+            trabajadorHashSet.add(Trabajador5);            
             
-            Map<String, Integer> map = new HashMap<String, Integer>();  
-            
-            map.put(Trabajador1.dni, ((Trabajador1.horasTrabajadas*Trabajador1.valorPorHora)*30));
-            map.put(Trabajador2.dni, ((Trabajador2.horasTrabajadas*Trabajador2.valorPorHora)*30));
-            map.put(Trabajador3.dni, ((Trabajador2.horasTrabajadas*Trabajador2.valorPorHora)*30));
-            map.put(Trabajador4.dni, ((Trabajador2.horasTrabajadas*Trabajador2.valorPorHora)*30));
+            Map<String, Integer> map = new HashMap<String, Integer>();
+            for(empleado empl : trabajadorHashSet){
+                map.put(empl.dni, empl.sueldo_mes());
+            }
+            // esto sería igual a 
+            // map.put(Trabajador1.dni, Trabajador1.sueldo_mes());
                       
             System.out.println("\nLa lista de empleados fueron guardados en el siguiente map: ");
-
-            Iterator<String> it = map.keySet().iterator();
-            while(it.hasNext()){
-                String key = it.next();
-                System.out.println(String.format("Clave dni: %s -> Valor sueldo mes: %d", key, map.get(key)));
-              }            
+            
+            int contador= 1;
+            // usando foreach para itear el map
+            for(Map.Entry<String, Integer> objeto : map.entrySet()){
+                System.out.println(String.format("%d: Clave dni: %s -> Valor sueldo mes: %d", contador, objeto.getKey(), objeto.getValue()));
+                contador+=1;
+            }
+            // usando Iterator para iterar el map
+            // Iterator<String> it = map.keySet().iterator();
+            // while(it.hasNext()){
+            //     String key = it.next();
+            //     System.out.println(String.format("%d: Clave dni: %s -> Valor sueldo mes: %d", contador, key, map.get(key)));
+            //     contador+=1;
+            // }            
     }
 }
 class empleado {
     String NombreApellido;
     String dni;
     int horasTrabajadas;
-    int valorPorHora;
-    
+    int valorPorHora;    
     public empleado(String NombreApellido, String dni, int horasTrabajadas, int valorPorHora){
         this.NombreApellido = NombreApellido;
         this.dni = dni;   
         this.horasTrabajadas = horasTrabajadas;
         this.valorPorHora = valorPorHora;
     }
+    public int sueldo_mes(){
+        int sueldoMes = (this.horasTrabajadas * this.valorPorHora)*30;
+        return sueldoMes;
+    }
 }
+
 

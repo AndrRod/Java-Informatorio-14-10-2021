@@ -7,15 +7,12 @@ import java.util.stream.Collectors;
 public class Ejercicio5 {
     public static void main(String[] args) {
         List<Alumno> alumnos = List.of(
-            new Alumno("Homero", "Simpson", LocalDate.now().minusYears(30)),
-            new Alumno("Andres", "Rodriguez", LocalDate.of(1987, 5, 22)),
-            new Alumno("Ana", "Gomez", LocalDate.of(1985, 8, 11)),
-            new Alumno("Roberto", "Baez", LocalDate.of(1985, 8, 11)),
-            new Alumno("Mirtha", "Legrand", LocalDate.of(1900, 1, 11))      
+            new Alumno("\"Homero", "Simpson\"", LocalDate.now().minusYears(30)),
+            new Alumno("\"Andres", "Rodriguez\"", LocalDate.of(1987, 5, 22)),
+            new Alumno("\"Ana", "Gomez\"", LocalDate.of(1985, 8, 11)),
+            new Alumno("\"Roberto", "Baez\"", LocalDate.of(1985, 8, 11)),
+            new Alumno("\"Mirtha", "Legrand\"", LocalDate.of(1900, 1, 11))      
         );        
-        for(Alumno alumno: alumnos){
-            System.out.println(alumno.getDatos());
-        }
         Map<Object, Object> listaAlumnos = alumnos.stream().collect(Collectors.toMap(a -> a.getDatos(), p-> p.getEdad()));
         System.out.println(listaAlumnos);
     }    

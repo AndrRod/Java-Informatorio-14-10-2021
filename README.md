@@ -14,6 +14,7 @@ La organizacion de carpetas es sencilla:
 >Dentro de cada carpeta los ejercicios. Sugerencia de nombres: **Ejercicio1.java, Ejercicio2.java, ...**
 
 # Informatorio-JAVA - Ejercicios complementarios: fecha de entrega 25-11-2021
+## 📄  _Ejercicios Complementarios Level 3 del Informatorio 2021._
 
 >Una vez completados todos los ejercicios complementarios. Deberan subirlos a un repositorio de Github de sus cuentas personales. Y adjuntar el link del mismo en esta actividad.
 

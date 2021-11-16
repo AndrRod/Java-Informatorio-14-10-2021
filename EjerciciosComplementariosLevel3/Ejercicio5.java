@@ -25,9 +25,7 @@ class Alumno{
     apellido = ape;
     nacimiento = nac;              
     }
-    public String getDatos(){
-        return nombre + " " + apellido;
-    }
+    public String getDatos(){return nombre + " " + apellido;}
     public int getEdad(){
         Period diferenciaFechas = Period.between(nacimiento, LocalDate.now());
         int años = Math.abs(diferenciaFechas.getYears());
